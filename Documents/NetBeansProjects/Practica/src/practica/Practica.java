@@ -12,25 +12,26 @@ import javax.swing.JOptionPane;
 public class Practica {
 
     public static void main(String[] args) {
-       int aux;
-       int vector[]= {2,5,7,4,5,6,8,7};
+       String aux;
+       String vector[]= {"A","Z","R","w"};
        
-        for (int j = 1; j < 3; j++) 
+        for (int i = 0; i < 10; i++) 
         {
-            for (int i =0; i <vector.length; i++) 
-            {
-                if (vector[i]>vector[i+1]) 
-                {
-                    aux=vector[i];
-                vector[i]=vector[i+1];
-                vector[i+1]=aux;
+            for (int j = 0; j < vector.length-1; j++) {
+                
+                if (vector[j].compareTo(vector[j+1])<0) {
+                    aux=vector[j];
+                    vector[j]=vector[j+1];
+                    vector[j+1]=aux;
                 }
                 
             }
         }
         
-        //imprecion
-      
+        //imprec
+        for (int i = 0; i < vector.length; i+1) {
+            System.out.println(vector[i]);
+        }
     }
     
 }
