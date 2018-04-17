@@ -29,7 +29,7 @@ public class Practica {
         }
         
         //imprec
-        for (int i = 0; i < vector.length; i+1) {
+        for (int i = 0; i < vector.length; i++) {
             System.out.println(vector[i]);
         }
     }
